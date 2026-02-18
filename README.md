@@ -133,7 +133,7 @@ chrome://extensions
 4. Select:
 
 ```
-news-intelligence-extension/
+news-intelligence-extension/ ( folder) 
 ```
 
 5. Open any news website and the panel will appear.
