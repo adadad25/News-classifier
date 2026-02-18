@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "News Intelligence Classifier",
+  "version": "2.0.0",
+  "description": "Reads webpage news and classifies good vs bad with adaptive learning",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "config/rules.js",
+        "content/storage.js",
+        "content/learning.js",
+        "content/parser.js",
+        "content/classifier.js",
+        "content/ui.js",
+        "content/content.js"
+      ],
+      "css": [
+        "styles/panel.css"
+      ]
+    }
+  ]
+}

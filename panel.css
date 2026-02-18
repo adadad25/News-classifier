@@ -1,0 +1,30 @@
+#news-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 420px;
+  max-height: 80vh;
+  overflow: auto;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 999999;
+  font-family: Arial;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+#news-panel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#news-panel th,
+#news-panel td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  font-size: 12px;
+}
+
+#news-panel button {
+  margin-right: 3px;
+}
